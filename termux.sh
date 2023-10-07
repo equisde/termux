@@ -11,7 +11,7 @@ function install_zsh() {
 	else
 		if ask "\\e[32m[ oh-my-zsh ]\\e[m configs found, overwrite?" Y; then
 			rm -rf "$HOME/.oh-my-zsh"
-			git clone git://github.com/robbyrussell/oh-my-zsh.git "$HOME/.oh-my-zsh" --depth 1 --quiet >/dev/null
+			git clone https://github.com/robbyrussell/oh-my-zsh "$HOME/.oh-my-zsh" --depth 1 --quiet >/dev/null
 		fi
 	fi
 	curl -fsLo "$HOME/.oh-my-zsh/themes/lambda-mod.zsh-theme" https://cdn.rawgit.com/onlurking/termux/master/.termux/lambda-mod.zsh-theme
