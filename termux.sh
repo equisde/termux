@@ -7,7 +7,7 @@ function install_zsh() {
 	fi
 	if [ ! -d "$HOME/.oh-my-zsh" ]; then
 		echo -e "\\e[32m[ oh-my-zsh ]\\e[m clonning repository"
-		git clone git://github.com/robbyrussell/oh-my-zsh.git "$HOME/.oh-my-zsh" --depth 1 --quiet >/dev/null
+		git clone https://github.com/robbyrussell/oh-my-zsh "$HOME/.oh-my-zsh" --depth 1 --quiet >/dev/null
 	else
 		if ask "\\e[32m[ oh-my-zsh ]\\e[m configs found, overwrite?" Y; then
 			rm -rf "$HOME/.oh-my-zsh"
